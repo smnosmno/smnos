@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/qdyd4p9t6xoabl95n5o3g/Downloads.bat?rlkey=snr74vv1vr8k5suujugvrhjtm&dl=1" -OutFile "Downloads.bat"
+          Invoke-WebRequest -Uri "https://s3.filebin.net/filebin/11fd58773048f5d82276adf5340837b751eed93d37d157bd20819021a4ce7841/16dcb70cadb998fac61828fafd972458169ceeba96c1ae58a8a0dd7467218be7?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=7pMj6hGeoKewqmMQILjm%2F20241005%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241005T154729Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&response-cache-control=max-age%3D60&response-content-disposition=filename%3D%22Downloads1.bat%22&response-content-type=text%2Fplain%3B%20charset%3Dutf-8&X-Amz-Signature=53e8a971baf33fc28aac64b28c6559d38827125742018a48d155394efdd6a285=1" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
 
       - name: Log In To AnyDesk
